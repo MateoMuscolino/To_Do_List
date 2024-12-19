@@ -1,0 +1,22 @@
+*{ /* apply for all the html */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #698ea8;
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 100px ;
+    padding: 40x 30px 70px;
+    border-radius: 10px;
+}
