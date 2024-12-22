@@ -17,7 +17,7 @@
     max-width: 540px;
     background: #fff;
     margin: 100px auto 20px ;
-    padding: 40x 30px 70px;
+    padding: 40px 30px 70px;
     border-radius: 10px;
 }
 
@@ -55,9 +55,40 @@ button{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: #555;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 15%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    background-image: url(images/unchecked.png);
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
 }
