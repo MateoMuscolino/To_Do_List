@@ -9,5 +9,9 @@ function addTask(){ // check if the user just added something
         let li = document.createElement("li"); // create the li element and append it to the list
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML = "&#10006;"; // add a cross icon
+        li.appendChild(span); // append the cross icon to the li element
     }
+    inputBox.value = ""; // clear the input box
 }
